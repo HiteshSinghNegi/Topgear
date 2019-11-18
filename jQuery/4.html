@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title>Jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<!--Write a JQuery program to change the background color of all the child elements of <p> element
+to green and also display only first two list items of <ol> by using advanced selectors.
+-->
+
+
+<body>
+	<div>
+	<p id="intro">jQuery is a lightweight, "write less, do more", JavaScript library.<span>hello</span>
+		<h6> The purpose of jQuery is to make it much easier to use JavaScript on your website</h6>
+	</p>
+	</div>
+	<ol>
+		<li>HTML/DOM Manipulataion</li>
+		<li>CSS Manipulataion</li>
+		<li>HTML event methods</li>
+		<li>Effects and Animations</li>
+		<li>AJAX</li>
+	</ol>
+	
+	<script type="text/javascript">
+		
+	
+		
+	$(document).ready(function() {
+		$(":header").css("color", "green");
+		$("ol li:gt(1)").hide();
+	});
+		
+		
+	</script>
+	
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

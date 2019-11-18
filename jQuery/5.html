@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <title>Jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+		div{
+			height:40px;
+			width:40px;
+		}
+	</style>
+</head>
+
+<!--Write a JQuery Code to get the background color of an element.
+Click on the following divisions, get the background color, and display it in paragraph
+-->
+
+
+<body>
+	<div style="background-color:red;"></div>
+	<div style="background-color:rgb(16,99,30);"></div>
+	<div style="background-color:#all;"></div>
+	<div style="background-color:#523456;"></div>
+	
+	
+	
+	<p></p>
+	<script type="text/javascript">
+		
+	
+		
+	$(document).ready(function() {
+		$("div").click(function(){
+			var color= $(this).css("background-color");
+			$("p").text(color);
+		});
+	});
+		
+		
+	</script>
+	
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
